@@ -14,13 +14,16 @@ document.addEventListener('DOMContentLoaded', function(){
     var main = document.getElementById('main');
     var help = document.getElementById('help');
 
-    chrome.tabs.query({currentWindow: true, active:true},
-        function(tabArray){
-            chrome.tabs.executeScript(tabArray[0].id, {file: "main.js"}, function(){
-                //script injected
-            });
-        }
-    );
+    /*
+    * Script now injected through content_scripts in manifest
+    * chrome.tabs.query({currentWindow: true, active:true},
+    *     function(tabArray){
+    *         chrome.tabs.executeScript(tabArray[0].id, {file: "main.js"}, function(){
+    *             //script injected
+    *         });
+    *     }
+    * );
+    */
 
     findBtn.addEventListener('click', function(){
         var caseArray = document.getElementById('caseNumbers').value.split(/\n/);
