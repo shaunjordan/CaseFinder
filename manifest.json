@@ -1,0 +1,22 @@
+{
+    "name": "CaseFinder Extension",
+    "description":"Find and select cases in queue",
+    "version":"1.1",
+    "permissions": ["activeTab", "storage"],
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon": {
+            "16": "images/checkCircle16.png",
+            "32": "images/checkCircle32.png",
+            "48": "images/checkCircle48.png",
+            "128": "images/checkCircle128.png"
+          }
+    },
+    "icons":{
+        "16": "images/checkCircle16.png",
+        "32": "images/checkCircle32.png",
+        "48": "images/checkCircle48.png",
+        "128": "images/checkCircle128.png"
+      },
+    "manifest_version": 2
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Author: Shaun Jordan
+        Date: 17-August-2018
+        Contact: hello@shaunmjordan.com
+    -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Case Selection Plugin</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <img id="logo" src="images/EG_Logo_color.png"/>
+    <h2>CaseFinder Extension</h2>
+    <section id="main">
+        <textarea autofocus placeholder="Paste case numbers here then click Find" name="caseNumbers" id="caseNumbers" rows="10"></textarea>
+    </section>
+    <section id="help" class="hide">
+        <hr>
+        <p>Make sure to use a case view with check boxes:</p>
+        <img id="boxex" src="images/chkBoxEx.png">
+        </br>
+        <hr>
+        <p>
+            The case view tab should be the leftmost open tab
+            and it must be active for the search to work:
+        </p>
+        <img id="tabpos" src="images/tabPosition.png">
+        </br>
+        <hr>
+        <p>
+            Copy and paste case numbers directly from Excel
+            or press Enter between entries if manually typing:
+        </p>
+        <img id="copypaste" src="images/copyPaste.png">
+        </br>
+        <p>For more help or bug reports contact Shaun Jordan</p>
+        <hr>
+    </section>    
+    <button id="findBtn">Find <i id="find" class="fas fa-search"></i></button>
+    <button id="helpBtn"><span>Help </span><i id="helpBtnIcons" class="fas fa-question"></i></button>
+</body>
+</html>

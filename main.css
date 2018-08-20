@@ -1,0 +1,60 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+h2 {
+    color: #009;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+#findBtn, #helpBtn {
+    background-color:#009;
+    border-radius: 6px;
+    padding: 8px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: 3px 3px 15px #6E6E6E;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    transition-duration: 250ms;
+    outline: none;
+}
+#findBtn:hover, #helpBtn:hover {
+	box-shadow: 5px 5px 15px #6E6E6E;
+    background-color:#2C7F3D;
+    transition-duration: 250ms;
+}
+
+textarea {
+    border: 2px solid #009;
+    border-radius: 8px;
+    outline: none;
+}
+
+#boxex, #tabpos, #copypaste, textarea {
+    width: 294px;
+    border: 2px solid #009;
+    border-radius: 5px;
+}
+#copypaste {
+    margin-bottom: 10px;
+}
+img {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;   
+}
+
+#logo {
+    width: 35%;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.05em;
+}
