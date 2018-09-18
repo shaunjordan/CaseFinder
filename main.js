@@ -1,3 +1,4 @@
+//script injected through manifest.json
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 
     var scriptOptions = message.scriptOptions.param1;
@@ -19,7 +20,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
             }
         }
     }
-    // text includes cases[i])) is also an option
+    
     for(var i = 0; i < scriptOptions.length; i++){ //cases in case array
         for(var j = 0; j < block.length; j++){ //items in block childNodes
             if(block[j].childNodes[0].childNodes[0].childNodes[0].childNodes[3].childNodes[0].childNodes[0].text == scriptOptions[i]){
